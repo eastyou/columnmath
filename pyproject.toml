@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "columnmath"
+version = "0.1.0"
+description = "竖式计算练习纸：加、减、乘的竖式排版与答案页"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "math", "arithmetic", "vertical", "worksheet", "printable", "addition", "subtraction"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+dependencies = []
+
+[project.scripts]
+columnmath = "columnmath.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/columnmath"
+Source = "https://github.com/eastyou/columnmath"
+
+[tool.setuptools]
+packages = ["columnmath"]
